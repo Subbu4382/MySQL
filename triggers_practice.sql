@@ -106,7 +106,7 @@ DROP TABLE IF EXISTS emp_salary_logs;
 CREATE TABLE emp_salary_logs (
     emp_id INT,
     message VARCHAR(100)
-);
+)
 
 DELIMITER //
 CREATE TRIGGER after_sal_update
