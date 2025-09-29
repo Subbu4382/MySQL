@@ -605,13 +605,13 @@ CREATE TABLE emp_copy AS
 SELECT * FROM EMP;
 
 
-📌 Copy only structure (no data)
+-- Copy only structure (no data)
 
 CREATE TABLE emp_structure AS
-SELECT * FROM EMP WHERE 1=0;
+SELECT * FROM EMP WHERE 1=0; -- To copy only Structure of a table we use Where 1=0
 
 
-📌 Create a summary table
+-- Create a summary table
 
 CREATE TABLE dept_salary_summary AS
 SELECT DEPT_NO, AVG(SALARY) AS avg_sal
