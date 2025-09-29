@@ -597,7 +597,26 @@ DROP procedure IncreaseClerkSalary;
 
 
 
+-- Examples of CTAS
 
+--  Copy full table
+
+CREATE TABLE emp_copy AS
+SELECT * FROM EMP;
+
+
+📌 Copy only structure (no data)
+
+CREATE TABLE emp_structure AS
+SELECT * FROM EMP WHERE 1=0;
+
+
+📌 Create a summary table
+
+CREATE TABLE dept_salary_summary AS
+SELECT DEPT_NO, AVG(SALARY) AS avg_sal
+FROM EMP
+GROUP BY DEPT_NO;
 
 
 
